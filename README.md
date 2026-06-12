@@ -43,6 +43,31 @@ Health AI is a state-of-the-art, premium medical intelligence portal designed fo
 
 ---
 
+## 📁 Repository Directory Structure
+
+```text
+├── datasets/                 # Clinical CSV datasets for training
+│   ├── breast_cancer.csv
+│   ├── diabetes.csv
+│   └── ... (8 datasets total)
+├── models/                   # Saved Scikit-Learn models & scalers (.pkl)
+│   ├── breast_cancer_model.pkl
+│   ├── breast_cancer_scaler.pkl
+│   └── ... (16 artifacts total)
+├── app.py                    # Main Streamlit web application & UI config
+├── auth.py                   # Patient login and registration authentication logic
+├── database.py               # SQLite database interface for history logging
+├── recommendation.py         # Personalized diet & exercise schedule data mapping
+├── report_generator.py       # Reusable clinical PDF report writer
+├── train_models.py           # Master script for training ML models
+├── train_*.py                # Individual model training scripts
+├── check_*.py                # Diagnostic test utilities
+├── requirements.txt          # Package dependency list
+└── README.md                 # Project documentation
+```
+
+---
+
 ## 💻 Installation & Setup
 
 1. **Clone the repository**:
